@@ -1,0 +1,105 @@
+.position-fix{ position: fixed !important; }
+
+.color-white{ color: white !important;}
+.color-black{ color: black !important; }
+.color-86acc4{ color: #86acc4 !important; }
+
+.bg-1b9bfb{ background: #1b9bfb !important; }
+.bg-white{ background : #fff;  }
+.bg-dark{ background: rgba(18,22,35,.9) !important; }
+.bg-4b2fd9{background: #4b2fd9 !important;}
+.bg-7c4fe0{background: #7c4fe0 !important;}
+
+.ft-weight{ font-weight: bolder; }
+.ft-weight-normal{font-weight: normal}
+.ft-size-30{font-size : 30px}
+.ft-size-17{font-size : 17px}
+.cursor-pointer{ cursor : pointer}
+
+.display-none{ display: none; }
+
+.width-100per{width:100%;}
+
+.z-index-0{ z-index: 0;}
+
+.border-7367f0-1{ border:1px solid #7367f0 !important; }
+
+.float-left{
+    float: left;
+}
+
+
+.animation-img{
+    position: relative; width : "100%"
+}
+
+@media (min-width: 992px)
+{
+    .dropdown-menu {
+        visibility: visible;
+    }
+}
+
+.expand-btn{
+    color : white;
+    float : right
+}
+.search-close-btn{
+    float: left;
+    width: 2vh; 
+    height: 2vh;
+    margin-left : 0.3vh;
+}
+.search-content-txt{
+    float : left;
+    margin-left : 0.3vh;
+    color: white;
+}
+.header-navbar{
+    background: #1a9a65 !important;
+}
+.clicked-btn{
+    border-bottom: 3px solid #1a9a65;
+    color: #1a9a65 !important;
+    font-weight: bold !important;
+}.account_money{
+    float: left;
+    margin-top: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+}.account_border_right{
+    border-right:1px solid ;
+}.account_submit_btn{
+    background: none !important;
+    border: 1px solid #30a528 !important; 
+    color : white;
+}.account_cancel_btn{
+    background: none !important;
+    border: 1px solid #d43030 !important; 
+    color : white;
+}.account_info_btn{
+    background: none !important;
+    border: 1px solid #7367f0 !important; 
+    color : white;
+}.sc-fzoXzr{
+    border-radius: 10px;
+    background: rgb(16, 22, 58) !important;
+}.tool_no_btn{
+    background: none !important;
+    border: none !important; 
+    color : white;
+}
+
+.media-library{
+    .rdt_TableRow{
+        height: 20vh;
+    }
+}
+.select__menu{
+    z-index: 1;
+}
+.data-list{
+    .select__menu{
+        color: white;
+    }
+}

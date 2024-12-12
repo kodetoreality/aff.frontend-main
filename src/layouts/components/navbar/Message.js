@@ -1,0 +1,51 @@
+import React from "react"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import Icons from '../../../configs/icon'
+import {
+    Col
+} from "reactstrap"
+
+class Message extends React.Component{
+
+    constructor(props) {
+		super(props)
+		this.state = {
+			time: new Date()
+		}
+	}
+	
+	componentDidMount() {
+		setInterval(this.update, 1000)
+	}
+	
+	update = () => {
+		this.setState({
+			time: new Date()
+		})
+    };
+
+    render(){
+        return(
+        <div className="header-time-bar">
+            <div className="header-clock-time">
+                <Col className="fonticon-container">
+                    <label className="fonticon-classname cursor-pointer">
+                        <svg style={{color : 'white'}} stroke="currentColor" fill="currentColor" viewBox="0 0 24 24" height="30px" width="30px"><path d="M20,2H4C2.897,2,2,2.897,2,4v12c0,1.103,0.897,2,2,2h3v3.767L13.277,18H20c1.103,0,2-0.897,2-2V4C22,2.897,21.103,2,20,2z M20,16h-7.277L9,18.233V16H4V4h16V16z"></path><path d="M7 7H17V9H7zM7 11H14V13H7z"></path></svg>
+                    </label>
+                </Col>
+                <div className = "cursor-pointer">
+                    <label style = {{float : 'left'}} className="fonticon-classname cursor-pointer">
+                        <svg style={{color : 'white'}} stroke="currentColor" fill="currentColor" strokeWidth="0" version="1" viewBox="0 0 48 48" enableBackground="new 0 0 48 48" height="30px" width="30px"><path fill="#78909C" d="M40,41H8c-2.2,0-4-1.8-4-4l0-20.9c0-1.3,0.6-2.5,1.7-3.3L24,0l18.3,12.8c1.1,0.7,1.7,2,1.7,3.3V37 C44,39.2,42.2,41,40,41z"></path><rect x="14" y="1" fill="#AED581" width="20" height="31"></rect><g fill="#558B2F"><path d="M13,0v33h22V0H13z M33,31H15V2h18V31z"></path><path d="M34,3c0,1.7-0.3,3-2,3c-1.7,0-3-1.3-3-3s1.3-2,3-2C33.7,1,34,1.3,34,3z"></path><path d="M16,1c1.7,0,3,0.3,3,2s-1.3,3-3,3s-2-1.3-2-3S14.3,1,16,1z"></path><circle cx="24" cy="8" r="2"></circle><circle cx="24" cy="20" r="6"></circle></g><path fill="#CFD8DC" d="M40,41H8c-2.2,0-4-1.8-4-4l0-20l20,13l20-13v20C44,39.2,42.2,41,40,41z"></path></svg>
+                    </label>
+                    <div style = {{color : 'white' , float : 'left'}}>
+                        Profit
+                        <p style = {{fontSize: '18px',color: 'white',fontWeight: 'bold'}}> 0.00$ </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        )
+    }
+}
+
+export default Message;
